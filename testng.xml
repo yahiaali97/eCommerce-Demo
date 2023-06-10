@@ -3,9 +3,10 @@
 <suite name="Sign">
     <test name="Regression">
         <classes>
-            <class name="RegistrationTest"/>
-            <class name="LoginTest"/>
-            <class name="SearchTest"/>
+            <class name="TC01_RegistrationTest"/>
+            <class name="TC02_LoginTest"/>
+            <class name="TC03_SearchTest"/>
+            <class name="TC04_AddtoCartTest"/>
         </classes>
     </test>
 </suite>

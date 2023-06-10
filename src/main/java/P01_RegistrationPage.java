@@ -2,9 +2,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class RegistrationPage extends PageBase{
-    public RegistrationPage(WebDriver driver)
-    {
+public class P01_RegistrationPage extends PageBase{
+    public P01_RegistrationPage(WebDriver driver) {
         super(driver); // to inherit the constructor
     }
 
@@ -31,13 +30,11 @@ public class RegistrationPage extends PageBase{
     WebElement SubmitRegister;
 
 
-    public void OpenRegistrationPage()
-    {
+    public void OpenRegistrationPage() {
         RegisterButton.click();
     }
 
-    public void Register(String f, String l, String e, String p, String cp)
-    {
+    public void Register(String f, String l, String e, String p, String cp) {
         male.click();
         FirstName.sendKeys(f);
         LastName.sendKeys(l);

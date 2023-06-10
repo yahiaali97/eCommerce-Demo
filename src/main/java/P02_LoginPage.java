@@ -2,8 +2,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends PageBase{
-    public LoginPage (WebDriver driver)
+public class P02_LoginPage extends PageBase{
+    public P02_LoginPage(WebDriver driver)
     {
         super(driver);
     }
@@ -20,17 +20,14 @@ public class LoginPage extends PageBase{
     @FindBy(xpath = "//button[@type='submit' and @class='button-1 login-button']")
     WebElement SubmitLogin;
 
-    public void OpenLoginPage()
-    {
+    public void OpenLoginPage() {
         LoginButton.click();
     }
 
-    public void Login(String e, String p)
-    {
+    public void Login(String e, String p) {
         Email.sendKeys(e);
         Password.sendKeys(p);
         RemeberMe.click();
         SubmitLogin.click();
     }
-
 }
